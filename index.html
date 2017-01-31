@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
@@ -8,4 +8,61 @@
 <body>
     <div id="mainDiv"></div>
 </body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body onload="homePage();">
+
+    <!--<header>
+        <ul>
+            <li>Programing Quiz</li>
+        </ul>
+    </header>
+    <div id="mainDiv">
+        <input type="button" id="mainButton" value="Start Quiz">
+    </div><-->
+    <header style="background-color:#808080; width: 100%; height: 20px;">
+        <div id="quiz">
+            <!--<h1>Quiz </h1>-->
+
+            <i class="fa fa-question-circle" aria-hidden="true" style="font-size: 60px; color: #4cff00; margin-left:50%; margin-top: 20px;"></i>
+            <hr style="margin-top: 20px;">
+             <div id="mainContent">
+            <p>
+                Are you ready to let go quiz??
+            </p>
+            <input type="button" value="Play" onclick="startQuiz();" style="width: 20%; height: 50px; background-color: #4cff00; border-radius: 20px;margin-top: 30px; margin-left: 42%;">
+            </div>
+            <!--<input type="button" value="Start Quiz" class="sQuiz">-->
+            <div id="quizSection">
+                <p id="question"></p>
+                <input type="radio" name="mcqs" onclick="nextButton()" id="radio0"><span id="opt0"></span><br>
+                <input type="radio" name="mcqs" onclick="nextButton()" id="radio1"><span id="opt1"></span><br>
+                <input type="radio" name="mcqs" onclick="nextButton()" id="radio2"><span id="opt2"></span><br>
+                <input type="radio" name="mcqs" onclick="nextButton()" id="radio3"><span id="opt3"></span><br>
+                <input type="button" onclick="nextQuestion();" value="Submit" id="nextquest" style="width: 20%; height: 50px; background-color: #4cff00; border-radius: 20px;margin-top: 30px; margin-left: 42%;">
+            </div>
+          
+            <div id="scoreDiv">
+                Your Score is : <span id="score"></span><span>%</span>
+            </div>
+        </div>
+    </header>
+    <!--<footer>
+            <p id="progress">Question x of y.</p>
+        </footer>-->
+    <script src="js/app.js"></script>
+    <!--<script src= "js/question.js"></script>
+        <script src="js/quiz_controller.js"></script>-->
+</body>
+
 </html>
